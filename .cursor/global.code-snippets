@@ -1,0 +1,36 @@
+{
+  "log": {
+    "scope": "javascript,typescript",
+    "prefix": "clg",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Log output to console"
+  },
+  "import": {
+    "scope": "javascript,typescript",
+    "prefix": "im",
+    "body": [
+      "import { $1 } from '$2';"
+    ],
+    "description": "Import a module"
+  },
+  "export-all": {
+    "scope": "javascript,typescript",
+    "prefix": "ex",
+    "body": [
+      "export * from '$2';"
+    ],
+    "description": "Export a module"
+  },
+  "vue-script-setup": {
+    "prefix": "vs",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "</script>\n",
+      "<template>",
+      "  <div>$1</div>",
+      "</template>\n",
+    ]
+  }
+}
