@@ -16,7 +16,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
   "workbench.editor.tabActionLocation": "left",
-  "workbench.fontAliasing": "auto",
+  "workbench.fontAliasing": "antialiased",
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
   "window.customTitleBarVisibility": "never",
