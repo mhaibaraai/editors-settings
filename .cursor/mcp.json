@@ -24,13 +24,6 @@
       "env": {
         "FIRECRAWL_API_KEY": "xxx"
       }
-    },
-    "Memory": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
     }
   }
 }
