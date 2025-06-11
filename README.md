@@ -46,12 +46,14 @@
 ### CSS 和样式
 
 - UnoCSS - 原子化 CSS 框架
+- Tailwind CSS - 实用优先的 CSS 框架
 
 ### 开发工具
 
 - GitLens - Git 增强
 - File Nesting - 文件嵌套
 - PNPM Catalog Lens - 包管理工具
+- Goto Alias - 路径别名跳转
 - i18n Ally - 国际化支持
 - Comment Translate - 注释翻译
 

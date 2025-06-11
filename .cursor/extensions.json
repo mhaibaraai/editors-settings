@@ -10,6 +10,7 @@
     "vitest.explorer",
     // CSS 框架支持
     "antfu.unocss",
+    "bradlc.vscode-tailwindcss",
     // 国际化支持
     "lokalise.i18n-ally",
     // 图标和主题
@@ -21,6 +22,7 @@
     // 开发工具增强
     "antfu.file-nesting",
     "antfu.pnpm-catalog-lens",
+    "antfu.goto-alias",
     "eamodio.gitlens",
     // 文件预览和处理
     "simonsiefke.svg-preview",
