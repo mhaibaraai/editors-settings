@@ -196,7 +196,6 @@
   "editor.detectIndentation": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
   "unocss.autocomplete.matchType": "fuzzy",
-  "unocss.underline": false,
   "unocss.colorPreview": false,
   "markdownlint.config": {
     "MD036": false
