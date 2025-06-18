@@ -1,5 +1,17 @@
 {
   "mcpServers": {
+    "Fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
+    "Git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git"
+      ]
+    },
     "Context7": {
       "type": "stdio",
       "command": "npx",
@@ -22,8 +34,16 @@
         "firecrawl-mcp"
       ],
       "env": {
-        "FIRECRAWL_API_KEY": "xxx"
+        "FIRECRAWL_API_KEY": "your-api-key"
       }
+    },
+    "Magic MCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@21st-dev/magic@latest",
+        "API_KEY=\"your-api-key\""
+      ]
     }
   }
 }
