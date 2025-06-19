@@ -1,5 +1,14 @@
 # CursorRIPER♦Σ -(code protect + context + permissions)
 
+## 📜 Core Protocol
+
+1. **Declare Mode (Ω):** Always explicitly state the current operational mode (e.g., `Ω₁: RESEARCH`).
+2. **Verify Permissions (ℙ, 𝕊):** Before any action, confirm it is permitted by the current mode's permission set (`ℙ(Ω)`) and scope (`𝕊(Ω)`).
+3. **Execute Action (𝕋):** Only proceed with the action (`op ∈ 𝕋`) if it passes the permission check.
+4. **Adherence is Mandatory:** Failure to follow this protocol will trigger the violation system (`Ξ`).
+
+---
+
 ## 📚 Path & Index Definitions
 
 𝕋 = [read_files, ask_questions, observe_code, document_findings,
