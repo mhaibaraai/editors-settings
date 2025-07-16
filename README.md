@@ -6,7 +6,9 @@
 [`.cursor/extensions.json`](./.cursor/extensions.json)  
 [`.cursor/global.code-snippets`](./.cursor/global.code-snippets)  
 [`.cursor/mcp.json`](./.cursor/mcp.json)  
-[`.cursor/rules/global-rules.md`](./.cursor/rules/global-rules.md)
+[`.cursor/rules/Global.md`](./.cursor/rules/Global.md)  
+[`.cursor/rules/RIPERsigma.md`](./.cursor/rules/RIPERsigma.md)  
+[`.cursor/rules/RIPERsigma.mcp.md`](./.cursor/rules/RIPERsigma.mcp.md)
 
 ## 预览
 
@@ -21,7 +23,7 @@
 | 配置项 | 值 |
 |--------|-----|
 | 主题 | Atom One Dark / Atom One Light |
-| 字体 | Monaspace Neon Var, JetBrains Mono, Fira Code, Input Mono |
+| 字体 | SF Mono, JetBrains Mono, Monaspace Neon Var, Fira Code, Input Mono |
 | 文件图标 | Material Icon Theme |
 | 产品图标 | Carbon |
 

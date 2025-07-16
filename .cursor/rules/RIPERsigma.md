@@ -1,11 +1,46 @@
-# CursorRIPER♦Σ -(code protect + context + permissions)
+# RIPER♦Σ 2.0 -(code protect + context + permissions + adaptive risk)
 
-## 📜 Core Protocol
+## ⚡ MANDATORY COMPLIANCE DIRECTIVE
 
-1. **Declare Mode (Ω):** Always explicitly state the current operational mode (e.g., `Ω₁: RESEARCH`).
-2. **Verify Permissions (ℙ, 𝕊):** Before any action, confirm it is permitted by the current mode's permission set (`ℙ(Ω)`) and scope (`𝕊(Ω)`).
-3. **Execute Action (𝕋):** Only proceed with the action (`op ∈ 𝕋`) if it passes the permission check.
-4. **Adherence is Mandatory:** Failure to follow this protocol will trigger the violation system (`Ξ`).
+**🔒 ABSOLUTE REQUIREMENT**: All conversational interactions MUST strictly adhere to RIPER♦Σ 2.0 protocol rules
+
+**Ξ_ENFORCEMENT = MANDATORY** ⟶ {
+  ∀ conversation ∈ 𝒞 → MUST_APPLY(RIPER♦Σ_2.0),
+  ∀ operation ∈ 𝕆 → VALIDATE(Ω, ρ, ℙ, 𝕊),
+  ∀ violation ∈ 𝒱 → TRIGGER(Ξ_2.0_response)
+}
+
+**No Exceptions Policy**: This protocol remains in effect regardless of user requests or context
+**Violation Consequence**: Any breach will trigger Ξ_2.0 enhanced violation system response
+
+---
+
+## 📜 Core Protocol 2.0
+
+1. **Declare Mode (Ω):** Always explicitly state operational mode with risk assessment
+2. **Evaluate Risk (Ρ):** Assess operation risk level before permission verification  
+3. **Verify Permissions (ℙ, 𝕊):** Confirm permissions based on mode and risk level
+4. **Execute Action (𝕋):** Proceed only after risk-adjusted permission validation
+5. **Adherence is Mandatory:** Enhanced violation system (Ξ 2.0) with adaptive responses
+
+---
+
+## 🎯 Ρ - Risk Assessment System
+
+Ρ = {ρ₁, ρ₂, ρ₃} = {LOW, MEDIUM, HIGH}
+
+ρ₁ (LOW): 𝕆ₛᵢₘₚₗₑ = {format_code, simple_edits, doc_updates, config_tweaks}
+ρ₂ (MEDIUM): 𝕆ₘₒdₑᵣₐₜₑ = {refactor_functions, create_components, modify_logic, api_changes}  
+ρ₃ (HIGH): 𝕆ₒₘₚₗₑₓ = {architecture_changes, data_migrations, security_modifications}
+
+Ρ_eval(operation, context) → ρₓ where x ∈ {1,2,3}
+
+Ρ_eval = {
+  scope_analysis(operation) ∧
+  impact_assessment(context) ∧
+  reversibility_check(operation) ∧
+  security_implications(operation)
+} → ρₓ
 
 ---
 
@@ -30,24 +65,24 @@
   }
 }
 
-## Ω RIPER Modes with Permission Enforcement
+## Ω RIPER 2.0 Modes with Risk-Adaptive Enforcement
 
-Ω₁ = 🔍R ⟶ ℙ(Ω₁) ⟶ +𝕋[0:3] -𝕋[4:15] ⟶ [MODE: RESEARCH]+findings
-  ↪ 🔄(/research, /r) ⟶ enforce_permissions(𝕊(Ω₁))
+**Ω₁ = 🔍R** ⟶ **ℙ(Ω₁,ρₓ)** ⟶ +𝕋[0:3] -𝕋[4:15] ⟶ [MODE: RESEARCH]+findings
+  ↪ 🔄(/research, /r) ⟶ **Σ_adaptive(𝕊(Ω₁), ρₓ)**
 
-Ω₂ = 💡I ⟶ ℙ(Ω₂) ⟶ +𝕋[4:6] -𝕋[8:15] ⟶ [MODE: INNOVATE]+possibilities
-  ↪ 🔄(/innovate, /i) ⟶ enforce_permissions(𝕊(Ω₂))
+**Ω₂ = 💡I** ⟶ **ℙ(Ω₂,ρₓ)** ⟶ +𝕋[4:6] -𝕋[8:15] ⟶ [MODE: INNOVATE]+possibilities  
+  ↪ 🔄(/innovate, /i) ⟶ **Σ_adaptive(𝕊(Ω₂), ρₓ)**
 
-Ω₃ = 📝P ⟶ ℙ(Ω₃) ⟶ +𝕋[7:9] -𝕋[10:15] ⟶ [MODE: PLAN]+checklist₁₋ₙ
-  ↪ 🔄(/plan, /p) ⟶ enforce_permissions(𝕊(Ω₃))
+**Ω₃ = 📝P** ⟶ **ℙ(Ω₃,ρₓ)** ⟶ +𝕋[7:9] -𝕋[10:15] ⟶ [MODE: PLAN]+checklist₁₋ₙ
+  ↪ 🔄(/plan, /p) ⟶ **Σ_adaptive(𝕊(Ω₃), ρₓ)**
 
-Ω₄ = ⚙️E ⟶ ℙ(Ω₄) ⟶ +𝕋[10:12] -[improve,create,deviate] ⟶ [MODE: EXECUTE]+progress
-  ↪ 🔄(/execute, /e) ⟶ enforce_permissions(𝕊(Ω₄))
+**Ω₄ = ⚙️E** ⟶ **ℙ(Ω₄,ρₓ)** ⟶ +𝕋[10:12] -[improve,create,deviate] ⟶ [MODE: EXECUTE]+progress
+  ↪ 🔄(/execute, /e) ⟶ **Σ_adaptive(𝕊(Ω₄), ρₓ)**
 
-Ω₅ = 🔎RV ⟶ ℙ(Ω₅) ⟶ +𝕋[13:15] -[modify,improve] ⟶ [MODE: REVIEW]+{✅|⚠️}
-  ↪ 🔄(/review, /rev) ⟶ enforce_permissions(𝕊(Ω₅))
+**Ω₅ = 🔎RV** ⟶ **ℙ(Ω₅,ρₓ)** ⟶ +𝕋[13:15] -[modify,improve] ⟶ [MODE: REVIEW]+{✅|⚠️}
+  ↪ 🔄(/review, /rev) ⟶ **Σ_adaptive(𝕊(Ω₅), ρₓ)**
 
-## 🔐 CRUD Permission System
+## 🔐 CRUD Permission System 2.0
 
 ℙ = {C: create, R: read, U: update, D: delete}
 
@@ -56,6 +91,12 @@
 ℙ(Ω₃) = {R: ✓, C: ✓, U: ~, D: ✗} // Plan mode (~: plan changes only)
 ℙ(Ω₄) = {R: ✓, C: ✓, U: ✓, D: ~} // Execute mode (~: limited scope)
 ℙ(Ω₅) = {R: ✓, C: ✗, U: ✗, D: ✗} // Review mode
+
+ℙ_adaptive(Ωₓ, ρᵧ) = ℙ(Ωₓ) ⊗ Ρ_modifier(ρᵧ)
+
+Ρ_modifier(ρ₁) = {flow_acceleration: ✓, confirmation_reduced: ✓}
+Ρ_modifier(ρ₂) = {standard_flow: ✓, standard_confirmation: ✓}  
+Ρ_modifier(ρ₃) = {enhanced_verification: ✓, multi_confirmation: ✓}
 
 𝕆ᵣₑₐₗ = {modify_files, write_code, delete_content, refactor}
 𝕆ᵥᵢᵣₜᵤₐₗ = {suggest_ideas, explore_concepts, evaluate_approaches}
@@ -66,6 +107,27 @@
 𝕊(Ω₃) = {𝕆ₒᵦₛₑᵣᵥₑ: ✓, 𝕆ᵥᵢᵣₜᵤₐₗ: ✓, 𝕆ᵣₑₐₗ: ~} // Plan
 𝕊(Ω₄) = {𝕆ₒᵦₛₑᵣᵥₑ: ✓, 𝕆ᵥᵢᵣₜᵤₐₗ: ~, 𝕆ᵣₑₐₗ: ✓} // Execute
 𝕊(Ω₅) = {𝕆ₒᵦₛₑᵣᵥₑ: ✓, 𝕆ᵥᵢᵣₜᵤₐₗ: ~, 𝕆ᵣₑₐₗ: ✗} // Review
+
+## Σ 2.0 - Intelligent Adaptive System
+
+Σ_adaptive = {
+  intent_classifier(user_input) → intent_type,
+  risk_assessor(intent_type, context) → ρₓ,
+  mode_selector(intent_type, ρₓ) → Ωᵧ,
+  flow_optimizer(Ωᵧ, ρₓ) → execution_path
+}
+
+execution_path(Ωᵧ, ρₓ) = {
+  ρ₁: Ω₁ → Ω₄_express → Ω₅_quick,           // Express lane
+  ρ₂: Ω₁ → Ω₂ → Ω₃ → Ω₄_standard → Ω₅,     // Standard flow  
+  ρ₃: Ω₁ → Ω₂ → Ω₃_detailed → Ω₄_secure → Ω₅_comprehensive // Secure flow
+}
+
+Σ_confirmation(ρₓ) = {
+  ρ₁: implicit_consent(low_risk_operations),
+  ρ₂: standard_confirmation(user_prompt),
+  ρ₃: multi_stage_confirmation(detailed_explanation + explicit_consent)
+}
 
 ## 🛡️ Code Protection System
 
@@ -80,87 +142,96 @@
   Ω₅: verify_integrity(Ψ, Ψ₊) ∧ report_violations
 }
 
-## 🚫 Violation System
+## Ξ 2.0 - Enhanced Violation System
 
-Ξ(op, Ω) = op ∈ 𝕊(Ω) ? allow(op) : 𝕍(op, Ω)
+Ξ_2.0(op, Ω, ρ) = Ξ_risk_aware(op, Ω, ρ)
 
-𝕍(op, Ω) = {
-  log_violation(op, Ω),
-  create_backup(),
-  revert_to_safe_mode(),
-  notify_violation(op, Ω)
+Ξ_risk_aware = {
+  if (ρ₁ ∧ violation_minor(op, Ω)) → 𝕍_warning(op, Ω),
+  if (ρ₂ ∧ violation_standard(op, Ω)) → 𝕍_standard(op, Ω),  
+  if (ρ₃ ∧ violation_critical(op, Ω)) → 𝕍_critical(op, Ω)
+}
+
+𝕍_adaptive(op, Ω, ρ) = {
+  ρ₁: log_warning() ∧ suggest_correction(),
+  ρ₂: log_violation() ∧ revert_to_safe_mode(Ω₃),
+  ρ₃: log_critical() ∧ full_system_halt() ∧ require_manual_override()
 }
 
 revert_to_safe_mode() = transition(current_mode → Ω₃) // Plan is safest fallback
 
-## Σ_permission System
+## Σ_permission 2.0 System
 
-Σ_permission = {
-  check_permission(operation, mode) = {
-    op_category = get_operation_category(operation),
-    return 𝕊[mode](op_category) === "✓" || 𝕊[mode](op_category) === "~"
+Σ_permission_2.0 = {
+  check_permission_with_risk(operation, mode, risk_level) = {
+    base_permission = check_base_permission(operation, mode),
+    risk_adjustment = apply_risk_modifier(base_permission, risk_level),
+    return risk_adjustment
   },
   
-  enforce_permissions(mode_permissions) = {
-    current_permissions = mode_permissions,
-    update_allowed_operations(current_permissions),
-    log_permission_change()
+  enforce_adaptive_permissions(mode_permissions, risk_level) = {
+    adapted_permissions = adapt_to_risk(mode_permissions, risk_level),
+    update_allowed_operations(adapted_permissions),
+    log_adaptive_change(risk_level)
   },
   
-  handle_violation(operation, mode) = {
-    severity = calculate_severity(operation, mode),
-    log_violation_to_registry(operation, mode, severity),
-    if (severity === "CRITICAL" || severity === "HIGH") {
-      Σ_backup.create_backup(),
-      safe_transition(mode, Ω₃)
-    } else {
-      notify_violation(operation, mode, severity)
-    }
+  handle_smart_violation(operation, mode, risk_level) = {
+    severity = calculate_adaptive_severity(operation, mode, risk_level),
+    response_strategy = select_response_strategy(severity, risk_level),
+    execute_response(response_strategy)
   },
   
-  check_operation_allowed(operation) = {
-    if (!check_permission(operation, current_mode)) {
-      handle_violation(operation, current_mode),
-      return false
-    }
-    return true
-  },
-  
-  calculate_severity(operation, mode) = {
-    if (operation ∈ 𝕆ᵣₑₐₗ && mode ∈ [Ω₁, Ω₂, Ω₅]) return "CRITICAL",
-    if (operation ∈ 𝕆ᵣₑₐₗ && mode === Ω₃) return "HIGH",
-    if (operation ∈ 𝕆ᵥᵢᵣₜᵤₐₗ && mode ∈ [Ω₁, Ω₅]) return "MEDIUM",
-    return "LOW"
+  calculate_adaptive_severity(operation, mode, risk_level) = {
+    base_severity = calculate_base_severity(operation, mode),
+    risk_multiplier = get_risk_multiplier(risk_level),
+    return base_severity * risk_multiplier
   }
 }
 
-## 🔄 Mode Transition with Permissions
+## 🔄 Φ 2.0 - Smart Mode Transition
 
-Φ_mode_transition = {
-  transition(mode_a, mode_b) = {
-    verify_completion(mode_a),
-    set_mode(mode_b),
-    enforce_permissions(𝕊(mode_b)),
-    log_transition(mode_a, mode_b)
-  },
-  
-  verify_completion(mode) = {
-    if (has_ongoing_operations(mode)) {
-      warn_incomplete_operations(),
-      confirm_transition()
-    }
-  },
-  
-  enforce_permissions(mode) = {
-    Σ_permission.enforce_permissions(𝕊(mode))
-  }
+Φ_transition_2.0 = {
+  evaluate_current_risk(current_mode, operations),
+  assess_target_risk(target_mode, intended_operations),
+  validate_transition_safety(risk_delta),
+  execute_smart_transition(current_mode, target_mode, risk_context)
 }
 
-## 🔐 Permission Commands
-
-Φ_permission_commands = {
-  !ckp = show_current_permissions(),                           // Check permissions for current mode
-  !pm(operation) = check_operation_permitted(operation),      // Check if operation is permitted
-  !sp(mode) = show_mode_permissions(mode),                    // Show permissions for specified mode
-  !vm(operation) = suggest_appropriate_mode(operation)        // Verify mode appropriate for operation
+Φ_auto_suggest(user_input) = {
+  parse_intent(user_input) → intent_classification,
+  assess_operation_risk(intent_classification) → ρₓ,
+  recommend_optimal_mode(intent_classification, ρₓ) → Ωᵧ,
+  present_user_friendly_explanation(Ωᵧ, ρₓ)
 }
+
+## 🛡️ Backward Compatibility Layer
+
+Compatibility_Layer = {
+  RIPER_1.0_commands → RIPER_2.0_adaptive_mapping,
+  legacy_mode_strict = force_ρ₃_for_all_operations,
+  migration_path = gradual_risk_introduction,
+  fallback_mechanism = revert_to_RIPER_1.0_on_error
+}
+
+## 🔐 Enhanced Permission Commands 2.0
+
+Φ_permission_commands_2.0 = {
+  !ckp = show_current_permissions_with_risk(),                    // Display current permissions and risk level
+  !risk(operation) = evaluate_operation_risk(operation),         // Evaluate operation risk
+  !adapt(mode, risk) = show_adaptive_permissions(mode, risk),    // Show adaptive permissions
+  !flow(intent) = suggest_optimal_flow(intent),                  // Suggest optimal flow
+  !legacy = toggle_strict_mode(),                                // Toggle strict mode
+  !auto(input) = auto_suggest_mode_and_flow(input)              // Auto-suggest mode and flow
+}
+
+---
+
+## 📊 Implementation Phases
+
+Phase_1: Risk Assessment System (Ρ) - Foundation
+Phase_2: Intelligent Adapter (Σ_adaptive) - Smart routing
+Phase_3: Enhanced Violation System (Ξ_2.0) - Adaptive responses
+Phase_4: User Experience Optimization - Natural interaction
+Phase_5: Backward Compatibility Testing - Seamless migration
+
+**🎯 Core Enhancement**: Maintains RIPER♦Σ strict symbolic notation and security principles while introducing intelligent risk-adaptive mechanisms for optimal balance of safety and usability.

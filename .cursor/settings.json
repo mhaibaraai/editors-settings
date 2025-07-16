@@ -1,6 +1,6 @@
 {
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Monaspace Neon Var, JetBrains Mono, Fira Code, Input Mono",
+  "editor.fontFamily": "SF Mono, JetBrains Mono, Monaspace Neon Var, Fira Code, Input Mono",
   "editor.fontLigatures": true,
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "interval",
@@ -28,6 +28,9 @@
   "git.enableSmartCommit": true,
   "git.untrackedChanges": "separate",
   "github.gitProtocol": "ssh",
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash-preview-05-20",
+  "gitlens.ai.generateCommitMessage.customInstructions": "Generate a Conventional Commit message. The commit type (e.g., feat, fix, chore) and any optional scope can be in English, but the main description of the commit must be written in Chinese.",
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.fontSize": 16,
@@ -83,7 +86,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 2025/6/11 21:18:37",
+    "//": "Last update at 2025/7/16 09:15:32",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -187,17 +190,28 @@
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vue.server.hybridMode": true,
+  "json.schemaDownload.enable": true,
   "nuxtr.openItemsAfterCreation": true,
   "nuxtr.vueFiles.firstTag": "script",
-  "commentTranslate.source": "Google",
-  "cursor.cpp.enablePartialAccepts": true,
-  "cursor.cmdk.autoSelect": false,
-  "editor.detectIndentation": false,
-  "editor.gotoLocation.multipleDefinitions": "goto",
   "unocss.autocomplete.matchType": "fuzzy",
   "unocss.colorPreview": false,
+  "commentTranslate.source": "Google",
+  "editor.detectIndentation": false,
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "markdownlint.config": {
     "MD036": false
-  }
+  },
+  "cursor.terminal.usePreviewBox": true,
+  "cursor.cpp.disabledLanguages": [
+    "plaintext"
+  ],
+  "cursor.diffs.useCharacterLevelDiffs": true,
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.shouldAllowCustomModes": true
 }
