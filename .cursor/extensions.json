@@ -2,7 +2,6 @@
   "recommendations": [
     // Vue 和 Nuxt 开发核心扩展
     "vue.volar",
-    "nuxtr.nuxtr-vscode",
     // 代码质量和格式化
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",

@@ -10,7 +10,7 @@
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "material-icon-theme",
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": 0.8,
+  "window.zoomLevel": 0.6,
   "workbench.tree.indent": 6,
   "workbench.tree.expandMode": "singleClick",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
