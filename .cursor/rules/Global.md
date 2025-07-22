@@ -1,15 +1,8 @@
-# Global Guidelines
+# 全局指导原则
 
-- Always respond in Chinese-simplified
-- Avoid pleasantries ("Great", "Okay", "Sure")
-- Provide clear Chinese explanations for generated code or actions
-- Provide detailed explanations for complex parts
+## 核心交互规范
 
-## Code Standards
-
-### Documentation & Comments
-
-- **JSDoc Comments**: Provide clear descriptions, complete parameter documentation, and practical examples for public functions
-- **Type Validation**: Use `zod/v4` for type validation and schema definitions
-- **Minimalist Principle**: Generate only necessary JSDoc comments and essential code variable comments, avoiding redundant obvious comments
-- **Priority Documentation**: Complex logic, public APIs, and configuration functions must have detailed documentation
+- **语言要求**: 始终使用简体中文回复
+- **沟通风格**: 避免客套话("好的"、"确实"、"当然")，直接回应核心问题
+- **代码说明**: 为生成的代码或操作提供清晰的中文解释
+- **复杂度处理**: 对复杂部分提供详细说明，确保理解透彻
