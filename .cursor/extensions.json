@@ -1,37 +1,28 @@
 {
   "recommendations": [
-    // Vue 和 Nuxt 开发核心扩展
-    "vue.volar",
-    // 代码质量和格式化
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    // 测试工具
-    "vitest.explorer",
-    // CSS 框架支持
-    "antfu.unocss",
-    "bradlc.vscode-tailwindcss",
-    // 国际化支持
-    "lokalise.i18n-ally",
-    // 图标和主题
-    "antfu.iconify",
-    "antfu.icons-carbon",
-    "pkief.material-icon-theme",
     "akamud.vscode-theme-onedark",
     "akamud.vscode-theme-onelight",
-    // 开发工具增强
     "antfu.file-nesting",
-    "antfu.pnpm-catalog-lens",
     "antfu.goto-alias",
-    "eamodio.gitlens",
-    // 文件预览和处理
-    "simonsiefke.svg-preview",
+    "antfu.iconify",
+    "antfu.icons-carbon",
+    "antfu.pnpm-catalog-lens",
+    "antfu.unocss",
+    "bradlc.vscode-tailwindcss",
+    "cipchk.cssrem",
+    "dbaeumer.vscode-eslint",
     "dotjoshjohnson.xml",
-    "davidanson.vscode-markdownlint",
-    // 实用工具
-    "uctakeoff.vscode-counter",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
     "intellsmi.comment-translate",
+    "lokalise.i18n-ally",
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "nuxt.mdc",
+    "pkief.material-icon-theme",
+    "redhat.vscode-yaml",
     "ritwickdey.liveserver",
-    // 语言包
-    "ms-ceintl.vscode-language-pack-zh-hans"
+    "simonsiefke.svg-preview",
+    "vitest.explorer",
+    "vue.volar"
   ]
 }

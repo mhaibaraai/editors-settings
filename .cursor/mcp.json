@@ -3,13 +3,6 @@
     "deepwiki-sse": {
       "url": "https://mcp.deepwiki.com/sse"
     },
-    "context7": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp"
-      ]
-    },
     "sequential-thinking": {
       "command": "npx",
       "args": [
@@ -24,20 +17,12 @@
         "firecrawl-mcp"
       ],
       "env": {
-        "FIRECRAWL_API_KEY": "xxx"
+        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_API_KEY"
       }
     },
-    "fetch": {
-      "command": "uvx",
-      "args": [
-        "mcp-server-fetch"
-      ]
-    },
-    "git": {
-      "command": "uvx",
-      "args": [
-        "mcp-server-git"
-      ]
+    "Context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {}
     }
   }
 }

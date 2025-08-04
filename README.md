@@ -7,8 +7,7 @@
 [`.cursor/global.code-snippets`](./.cursor/global.code-snippets)  
 [`.cursor/mcp.json`](./.cursor/mcp.json)  
 [`.cursor/rules/Global.md`](./.cursor/rules/Global.md)  
-[`.cursor/rules/RIPERsigma.md`](./.cursor/rules/RIPERsigma.md)  
-[`.cursor/rules/RIPERsigma.mcp.md`](./.cursor/rules/RIPERsigma.mcp.md)
+[`.cursor/rules/RIPERsigma.md`](./.cursor/rules/RIPERsigma.md)
 
 ## 预览
 
@@ -32,7 +31,6 @@
 ### 核心开发
 
 - Vue.volar - Vue 3 语言支持
-- Nuxtr - Nuxt 开发工具
 - ESLint - 代码质量检查
 - Prettier - 代码格式化
 - Vitest Explorer - 测试运行器
@@ -49,6 +47,7 @@
 
 - UnoCSS - 原子化 CSS 框架
 - Tailwind CSS - 实用优先的 CSS 框架
+- CSS Rem - CSS 单位转换
 
 ### 开发工具
 
@@ -63,11 +62,11 @@
 
 - SVG Preview - SVG 预览
 - XML - XML 语言支持
-- Markdown Lint - Markdown 检查
+- YAML - YAML 语言支持
+- MDC - Markdown 组件支持
 
 ### 实用工具
 
-- VSCode Counter - 代码统计
 - Live Server - 本地服务器
 - 中文语言包 - 界面中文化
 
