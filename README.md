@@ -2,12 +2,14 @@
 
 **个人 Cursor 编辑器设置**
 
-[`.cursor/settings.json`](./.cursor/settings.json)  
-[`.cursor/extensions.json`](./.cursor/extensions.json)  
-[`.cursor/global.code-snippets`](./.cursor/global.code-snippets)  
-[`.cursor/mcp.json`](./.cursor/mcp.json)  
-[`.cursor/rules/Global.md`](./.cursor/rules/Global.md)  
-[`.cursor/rules/RIPERsigma.md`](./.cursor/rules/RIPERsigma.md)
+[`vscode/settings.json`](./vscode/settings.json)  
+[`vscode/extensions.json`](./vscode/extensions.json)  
+[`vscode/global.code-snippets`](./vscode/global.code-snippets)  
+[`vscode/mcp.json`](./vscode/mcp.json)  
+[`vscode/rules/Global.md`](./vscode/rules/Global.md)  
+[`vscode/rules/Global-zh.md`](./vscode/rules/Global-zh.md)  
+[`vscode/rules/RIPERsigma.md`](./vscode/rules/RIPERsigma.md)  
+[`vscode/rules/RIPERsigma-zh.md`](./vscode/rules/RIPERsigma-zh.md)
 
 ## 预览
 
