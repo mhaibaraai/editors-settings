@@ -1,15 +1,22 @@
-# Cursor 设置配置
+# 个人配置
 
-**个人 Cursor 编辑器设置**
+# Claude
 
-[`vscode/settings.json`](./vscode/settings.json)  
-[`vscode/extensions.json`](./vscode/extensions.json)  
-[`vscode/global.code-snippets`](./vscode/global.code-snippets)  
-[`vscode/mcp.json`](./vscode/mcp.json)  
-[`vscode/rules/Global.md`](./vscode/rules/Global.md)  
-[`vscode/rules/Global-zh.md`](./vscode/rules/Global-zh.md)  
-[`vscode/rules/RIPERsigma.md`](./vscode/rules/RIPERsigma.md)  
-[`vscode/rules/RIPERsigma-zh.md`](./vscode/rules/RIPERsigma-zh.md)
+- [`.claude/CLAUDE.md`](./claude/CLAUDE.md)
+- [`.claude/.claude.json`](./claude/.claude.json)
+- [`.claude/commands/refactor.md`](./claude/commands/refactor.md)
+- [`.claude/commands/optimize.md`](./claude/commands/optimize.md)
+
+# VSCode
+
+- [`vscode/settings.json`](./vscode/settings.json)
+- [`vscode/extensions.json`](./vscode/extensions.json)
+- [`vscode/global.code-snippets`](./vscode/global.code-snippets)
+- [`vscode/mcp.json`](./vscode/mcp.json)
+- [`vscode/rules/Global.md`](./vscode/rules/Global.md)
+- [`vscode/rules/Global-zh.md`](./vscode/rules/Global-zh.md)
+- [`vscode/rules/RIPERsigma.md`](./vscode/rules/RIPERsigma.md)
+- [`vscode/rules/RIPERsigma-zh.md`](./vscode/rules/RIPERsigma-zh.md)
 
 ## 预览
 
@@ -17,7 +24,7 @@
 
 ![深色主题预览](./dark-theme.png)
 
-### 浅色主题  
+### 浅色主题
 
 ![浅色主题预览](./light-theme.png)
 
