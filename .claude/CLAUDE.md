@@ -93,3 +93,8 @@
 ```markdown
 分析此代码的性能问题并建议优化：
 ```
+
+**commit.md** - 提交
+```markdown
+分析当前 git 状态和变更内容，自动生成符合约定式提交规范（Conventional Commits）的 commit 消息，并执行提交。
+```

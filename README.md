@@ -6,6 +6,7 @@
 - [`.claude/.claude.json`](./.claude/.claude.json)
 - [`.claude/commands/refactor.md`](./.claude/commands/refactor.md)
 - [`.claude/commands/optimize.md`](./.claude/commands/optimize.md)
+- [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 
 # VSCode
 
