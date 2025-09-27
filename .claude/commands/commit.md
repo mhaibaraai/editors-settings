@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*) , Bash(git diff:*), Bash(git log:*)
+allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*) , Bash(git diff:*), Bash(git log:*) , Bash(pnpm:*)
 description: 创建一个 git 提交
 ---
 
