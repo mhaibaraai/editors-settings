@@ -54,7 +54,7 @@
 
 ### Git Workflow
 
-- **Commits**: Follow [Conventional Commits](https://www.conventionalcommits.org/) format
+- **Commits**: Follow **emoji + Conventional Commits** specification, all commit messages must be written in Chinese.
 - **Branches**: Use descriptive names (`feat/`, `fix/`, `docs/`, `chore/`)
 - **Pull Requests**: Clear titles, reference issues in PR description, atomic changes
 - **Issue References**: Only use "Closes #123" in PR descriptions, not in individual commit messages
