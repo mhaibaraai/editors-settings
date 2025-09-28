@@ -11,14 +11,10 @@
 - [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
 # VSCode
 
-- [`vscode/settings.json`](./vscode/settings.json)
-- [`vscode/extensions.json`](./vscode/extensions.json)
-- [`vscode/global.code-snippets`](./vscode/global.code-snippets)
-- [`vscode/mcp.json`](./vscode/mcp.json)
-- [`vscode/rules/Global.md`](./vscode/rules/Global.md)
-- [`vscode/rules/Global-zh.md`](./vscode/rules/Global-zh.md)
-- [`vscode/rules/RIPERsigma.md`](./vscode/rules/RIPERsigma.md)
-- [`vscode/rules/RIPERsigma-zh.md`](./vscode/rules/RIPERsigma-zh.md)
+- [`.vscode/settings.json`](./.vscode/settings.json)
+- [`.vscode/extensions.json`](./.vscode/extensions.json)
+- [`.vscode/global.code-snippets`](./.vscode/global.code-snippets)
+- [`.vscode/mcp.json`](./.vscode/mcp.json)
 
 ## 预览
 
