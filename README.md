@@ -3,10 +3,12 @@
 # Claude
 
 - [`.claude/CLAUDE.md`](./.claude/CLAUDE.md)
+- [`.claude/CLAUDE-zh.md`](./.claude/CLAUDE-zh.md)
 - [`.claude/.claude.json`](./.claude/.claude.json)
 - [`.claude/commands/optimize.md`](./.claude/commands/optimize.md)
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
-
+- [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
+- [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
 # VSCode
 
 - [`vscode/settings.json`](./vscode/settings.json)
