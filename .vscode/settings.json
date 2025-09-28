@@ -12,6 +12,7 @@
   "workbench.activityBar.location": "top",
   "window.autoDetectColorScheme": true,
   "window.zoomLevel": 0.6,
+  "window.customTitleBarVisibility": "never",
   "workbench.tree.indent": 6,
   "workbench.tree.expandMode": "singleClick",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
@@ -19,6 +20,9 @@
   "workbench.editor.tabActionLocation": "left",
   "workbench.fontAliasing": "antialiased",
   "workbench.startupEditor": "none",
+  "window.dialogStyle": "custom",
+  "window.titleBarStyle": "custom",
+  "window.nativeTabs": true,
   "window.title": "${rootName}",
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
@@ -237,13 +241,16 @@
   },
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
-      "file": "commit.instructions.md"
-    },
-    {
       "text": "All commit messages must be written in Chinese",
     },
     {
       "text": "Follow emoji + Conventional Commits specification"
     }
-  ]
+  ],
+  "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+  "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+  "github.copilot.chat.languageContext.typescript.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:claude-sonnet-4",
+  "gitlens.ai.generateCommitMessage.customInstructions": "All commit messages must be written in Chinese, and follow emoji + Conventional Commits specification",
 }
