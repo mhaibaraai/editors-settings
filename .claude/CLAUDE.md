@@ -4,7 +4,7 @@
 
 ## Core Principles
 
-- **Language Requirement**: Always respond in English
+- **Language Requirement**: Always respond in Chinese
 - **Communication Style**: Avoid pleasantries (like "okay", "indeed", "certainly"), respond directly to core issues
 
 ### Security First

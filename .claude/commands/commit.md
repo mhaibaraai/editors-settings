@@ -24,9 +24,9 @@ Create conventional commits, splitting changes into multiple commits when it imp
 4. When multiple logical groups exist, iterate through them:
 
    - Stage only the files or hunks for the current group (e.g. `git add <paths>` or `git add -p`)
-   - Create an emoji conventional commit message that matches the group scope
+   - Create a conventional commit message that matches the group scope (**must use Chinese**)
 
 5. If there is only one logical group, stage everything with `git add -A` before committing
 6. Push all commits on the current branch with `git push`
 
-Remember: This project follows Conventional Commits specification. Do NOT add co-authors to the commit message.
+Remember: This project follows Conventional Commits specification. **All commit messages must be written in Chinese**. Do NOT add co-authors to the commit message.
