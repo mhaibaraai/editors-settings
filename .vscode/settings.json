@@ -10,7 +10,6 @@
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "top",
-  "window.customTitleBarVisibility": "never",
   "window.autoDetectColorScheme": true,
   "window.zoomLevel": 0.6,
   "workbench.tree.indent": 6,
@@ -20,9 +19,6 @@
   "workbench.editor.tabActionLocation": "left",
   "workbench.fontAliasing": "antialiased",
   "workbench.startupEditor": "none",
-  "window.dialogStyle": "custom",
-  "window.titleBarStyle": "custom",
-  "window.nativeTabs": true,
   "window.title": "${rootName}",
   "git.confirmSync": false,
   "git.enableCommitSigning": true,
@@ -240,6 +236,9 @@
     "cursor-workspace": false
   },
   "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": "commit.instructions.md"
+    },
     {
       "text": "All commit messages must be written in Chinese",
     },
