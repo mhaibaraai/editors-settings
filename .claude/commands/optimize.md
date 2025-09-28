@@ -1,65 +1,78 @@
----
-allowed-tools: Bash(npm:*), Bash(pnpm:*), Bash(git:*), Read, Edit, MultiEdit, Grep, Task, TodoRead, TodoWrite
-description: 分析代码的性能问题并建议优化方案
----
+# Code Optimization Analysis
 
-## 上下文
+Comprehensive analysis of code performance, quality, architecture and security issues, providing specific optimization implementation plans
 
-- **当前 git 状态**: !`git status --porcelain`
-- **当前分支**: !`git branch --show-current`
-- **最近提交**: !`git log --oneline -5`
+## Analysis Process
 
-## 任务
+### 1. Baseline Assessment
 
-### 1. 性能优化
+- Performance metrics collection (response time, memory usage, CPU utilization)
+- Code quality scanning (complexity, duplication rate, test coverage)
+- Security risk identification (dependency vulnerabilities, input validation, access control)
 
-- **算法优化**: 分析时间/空间复杂度，优化循环和递归
-- **内存管理**: 检测内存泄漏，优化数据结构使用
-- **异步优化**: 并发处理，避免阻塞操作
-- **缓存策略**: 识别重复计算，实施缓存机制
-- **懒加载**: 延迟加载非关键资源
+### 2. Issue Identification & Prioritization
 
-### 2. 代码质量优化
+- **P0 Critical Issues**: Security vulnerabilities, memory leaks, performance bottlenecks
+- **P1 Important Issues**: Code duplication, excessive complexity, missing error handling
+- **P2 Optimization Improvements**: User experience, code style, documentation enhancement
 
-- **重复代码消除**: 应用 DRY 原则，提取公共函数
-- **复杂度降低**: 拆分大函数（>30行），降低圈复杂度（<10）
-- **死代码清理**: 删除无法访问的代码
+### 3. Optimization Implementation
 
-### 3. 架构优化
+#### High Priority (Immediate Action)
 
-- **模块化**: 拆分大文件（>300行），单一职责原则
-- **解耦**: 减少模块间依赖，使用依赖注入
-- **设计模式**: 应用合适的设计模式改善结构
+- **Security Hardening**: Fix known vulnerabilities, add input validation, permission checks
+- **Performance Critical**: Fix memory leaks, optimize algorithm complexity, eliminate blocking operations
+- **Error Handling**: Add try-catch, null/undefined checks (`?.`, `??`)
 
-### 4. 错误处理与健壮性
+#### Medium Priority (Planned Action)
 
-- **异常捕获**: 添加 `try-catch`，使用 `Promise.catch`
-- **边界处理**: 验证输入，处理 null/undefined（`?.`、`??`）
-- **容错设计**: 实现重试机制，添加降级策略
-- **日志优化**: 添加关键节点日志，避免日志污染
+- **Code Quality**: Eliminate duplicate code, split large functions (>30 lines), reduce cyclomatic complexity (<10)
+- **Architecture Improvement**: Modular refactoring, decouple dependencies, apply design patterns
+- **Type Safety**: Improve TypeScript type definitions, strict mode checks
 
-### 5. 前端特定优化
+#### Low Priority (Optimization Improvements)
 
-- **渲染优化**: 虚拟滚动，防抖节流，React.memo/Vue.computed
-- **打包优化**: 代码分割，tree-shaking，压缩优化
-- **网络优化**: 请求合并，资源预加载，CDN使用
-- **状态管理**: 优化 store 结构，避免不必要的重渲染
+- **Frontend Performance**: Component memoization, virtual scrolling, lazy loading, bundle optimization
+- **Backend Optimization**: Database indexing, API caching, concurrent processing optimization
+- **Developer Experience**: Code formatting, lint rules, build optimization
 
-### 6. 后端特定优化
+### 4. Verification Testing
 
-- **数据库优化**: 索引优化，查询优化，连接池配置
-- **API优化**: 分页处理，响应压缩，GraphQL查询优化
-- **并发处理**: 线程池优化，异步队列，负载均衡
+- **Functional Verification**: Ensure optimization doesn't break existing functionality
+- **Performance Comparison**: Measure performance improvements before and after optimization
+- **Security Testing**: Verify effectiveness of security measures
 
-### 7. 验证与测试
+## Technology Stack Specific Optimization
 
-- **性能基准**: 建立性能基线，对比优化前后
-- **回归测试**: 确保功能不受影响
-- **负载测试**: 验证高并发场景表现
+### Web Frontend
 
-## 约束
+- **React/Vue**: Component memoization, state optimization, render optimization
+- **Build Tools**: Vite/Webpack configuration, code splitting, tree-shaking
+- **Performance Monitoring**: Web Vitals, Core Web Vitals, Performance API
 
-- 先获取现有模板，完整分析后提供改进建议
-- 所有优化都要基于实际需求和最佳实践
-- 应用 CLAUDE.md 中学习的经验和技巧
-- 优化后直接建立新版本，不修改原有模板
+### Backend Services
+
+- **Node.js**: Event loop optimization, stream processing, cluster mode
+- **Database**: Query optimization, indexing strategy, connection pool configuration
+- **Caching**: Redis strategy, CDN configuration, HTTP cache headers
+
+### General Optimization
+
+- **Monitoring & Alerting**: Add key metrics monitoring, error tracking
+- **Logging Optimization**: Structured logging, appropriate log levels, avoid sensitive information
+- **Dependency Management**: Update dependencies, remove unused packages, security audits
+
+## Implementation Principles
+
+- **Security First**: All optimizations must not introduce security risks
+- **Backward Compatibility**: Maintain API compatibility, avoid breaking changes
+- **Progressive Improvement**: Implement in phases, verify effectiveness of each step
+- **Follow Standards**: Adhere to existing code styles and architectural patterns in the project
+- **Data-Driven**: Base optimization strategies on actual performance data
+
+## Operational Constraints
+
+- **Version Management**: Create new versions directly after optimization, don't modify original templates
+- **Documentation Maintenance**: Update or create optimization documentation, path: `docs/optimize/*.md`
+- **Baseline Analysis**: First obtain existing code, provide improvement suggestions after complete analysis
+- **Best Practices**: All optimizations should be based on actual requirements and industry best practices
