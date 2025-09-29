@@ -1,84 +1,68 @@
+---
+description: Analyze code performance, quality, and security issues with specific optimization solutions
+argument-hint: [file-path] (omit for project-wide optimization)
+---
+
 # Code Optimization Analysis
 
-Comprehensive analysis of code performance, quality, architecture and security issues, providing specific optimization implementation plans
+${1:+Analyze `$1` for}${1:-Analyze entire project for} performance, quality, and security issues with specific optimization solutions
 
-## Analysis Process
+${1:+@$1}
 
-### 1. Baseline Assessment
+## Analysis Scope
 
-- Performance metrics collection (response time, memory usage, CPU utilization)
-- Code quality scanning (complexity, duplication rate, test coverage)
-- Security risk identification (dependency vulnerabilities, input validation, access control)
+${1:+**Target File**: `$1`}${1:-**Entire Project**: Scan all source code files, focusing on:
+- Core business logic files
+- Performance-critical paths
+- Security-sensitive modules
+- High-frequency components}
 
-### 2. Issue Identification & Prioritization
+## Analysis Focus
 
-- **P0 Critical Issues**: Security vulnerabilities, memory leaks, performance bottlenecks
-- **P1 Important Issues**: Code duplication, excessive complexity, missing error handling
-- **P2 Optimization Improvements**: User experience, code style, documentation enhancement
+### 1. Critical Issues (Priority Handling)
 
-### 3. Optimization Implementation
+- **Security Vulnerabilities**: Input validation, permission control, dependency vulnerabilities
+- **Performance Bottlenecks**: Memory leaks, algorithm complexity, blocking operations
+- **Error Handling**: Missing try-catch, null/undefined checks
 
-#### High Priority (Immediate Action)
+### 2. Code Quality
 
-- **Security Hardening**: Fix known vulnerabilities, add input validation, permission checks
-- **Performance Critical**: Fix memory leaks, optimize algorithm complexity, eliminate blocking operations
-- **Error Handling**: Add try-catch, null/undefined checks (`?.`, `??`)
+- **Code Duplication**: Extract common logic
+- **Complex Functions**: Split functions exceeding 30 lines
+- **Cyclomatic Complexity**: Reduce to below 10
 
-#### Medium Priority (Planned Action)
+### 3. Modernization Improvements
 
-- **Code Quality**: Eliminate duplicate code, split large functions (>30 lines), reduce cyclomatic complexity (<10)
-- **Modern Syntax**: Use ES6+ features (destructuring, arrow functions, template literals, async/await, optional chaining, etc.)
-- **Architecture Improvement**: Modular refactoring, decouple dependencies, apply design patterns
-- **Type Safety**: Improve TypeScript type definitions, strict mode checks
+- **Modern Syntax**: ES6+, optional chaining `?.`, nullish coalescing `??`, async/await
+- **Type Safety**: TypeScript type definitions, strict mode
+- **Performance Optimization**: Component memoization, lazy loading, code splitting
 
-#### Low Priority (Optimization Improvements)
+## Output Requirements
 
-- **Frontend Performance**: Component memoization, virtual scrolling, lazy loading, bundle optimization
-- **Backend Optimization**: Database indexing, API caching, concurrent processing optimization
-- **Developer Experience**: Code formatting, lint rules, build optimization
-
-### 4. Verification Testing
-
-- **Functional Verification**: Ensure optimization doesn't break existing functionality
-- **Performance Comparison**: Measure performance improvements before and after optimization
-- **Security Testing**: Verify effectiveness of security measures
-
-## Technology Stack Specific Optimization
-
-### Web Frontend
-
-- **React/Vue**: Component memoization, state optimization, render optimization
-- **Build Tools**: Vite/Webpack configuration, code splitting, tree-shaking
-- **Performance Monitoring**: Web Vitals, Core Web Vitals, Performance API
-
-### Backend Services
-
-- **Node.js**: Event loop optimization, stream processing, cluster mode
-- **Database**: Query optimization, indexing strategy, connection pool configuration
-- **Caching**: Redis strategy, CDN configuration, HTTP cache headers
-
-### General Optimization
-
-- **Monitoring & Alerting**: Add key metrics monitoring, error tracking
-- **Logging Optimization**: Structured logging, appropriate log levels, avoid sensitive information
-- **Dependency Management**: Update dependencies, remove unused packages, security audits
-- **Modern Syntax Application**: 
-  - JavaScript/TypeScript: Use destructuring, spread operator, optional chaining, nullish coalescing
-  - Python: Use type hints, f-strings, walrus operator, dataclass
-  - Other languages: Apply corresponding modern syntax features to improve code readability and performance
+${1:+### Single File Optimization
+1. **Issue List**: List discovered issues by priority (P0/P1/P2)
+2. **Optimized Code**: Create new file with optimized code, keep original unchanged
+   - Naming convention: `$1.optimized` or create `optimized/` subdirectory
+3. **Improvement Summary**: Brief description of main improvements and expected effects
+4. **Risk Notice**: Mention compatibility impacts if any}${1:-### Project-wide Optimization
+1. **Issue List**: List discovered issues by file/module with priority labels
+2. **Optimization Plan**:
+   - P0 Critical: Files requiring immediate fixes
+   - P1 Important: Modules planned for optimization
+   - P2 Improvements: Long-term optimization directions
+3. **Priority Files**: Create optimized versions for 3-5 most critical files (new files)
+4. **Architecture Recommendations**: Overall architectural improvement directions}
 
 ## Implementation Principles
 
-- **Security First**: All optimizations must not introduce security risks
-- **Backward Compatibility**: Maintain API compatibility, avoid breaking changes
-- **Progressive Improvement**: Implement in phases, verify effectiveness of each step
-- **Follow Standards**: Adhere to existing code styles and architectural patterns in the project
-- **Data-Driven**: Base optimization strategies on actual performance data
-- **Clean & Efficient**: Code must be clean, efficient and use modern syntax, avoid redundant code, prioritize language modern features
+- ✅ Security first, no new risks introduced
+- ✅ Maintain backward compatibility
+- ✅ Concise and efficient code using modern syntax
+- ✅ Based on actual needs, avoid over-optimization
+- ✅ **Do not modify original files**: All optimized code output as new files
 
-## Operational Constraints
+## Documentation Output
 
-- **Version Management**: Create new versions directly after optimization, don't modify original templates
-- **Documentation Maintenance**: Update or create optimization documentation, path: `docs/optimize/*.md`
-- **Baseline Analysis**: First obtain existing code, provide improvement suggestions after complete analysis
-- **Best Practices**: All optimizations should be based on actual requirements and industry best practices
+${1:+- Analysis Report: `docs/optimize/$1_analysis.md`
+- Optimized File: `$1.optimized` or `optimized/$1` (original file remains unchanged)}${1:-- Overall Analysis: `docs/optimize/project_optimization_plan.md`
+- Optimized Files: Create `optimized/` subdirectories in respective file directories to store optimized versions}
