@@ -20,22 +20,21 @@ ${1:+**Target File**: `$1`}${1:-**Entire Project**: Scan all source code files, 
 ## Analysis Focus
 
 ### 1. Critical Issues (Priority Handling)
-
 - **Security Vulnerabilities**: Input validation, permission control, dependency vulnerabilities
 - **Performance Bottlenecks**: Memory leaks, algorithm complexity, blocking operations
 - **Error Handling**: Missing try-catch, null/undefined checks
 
 ### 2. Code Quality
-
 - **Code Duplication**: Extract common logic
 - **Complex Functions**: Split functions exceeding 30 lines
 - **Cyclomatic Complexity**: Reduce to below 10
 
 ### 3. Modernization Improvements
-
 - **Modern Syntax**: ES6+, optional chaining `?.`, nullish coalescing `??`, async/await
 - **Type Safety**: TypeScript type definitions, strict mode
-- **Performance Optimization**: Component memoization, lazy loading, code splitting
+- **Performance Optimization**:
+  - Frontend: Component memoization, lazy loading, code splitting
+  - Backend: Database indexing, caching, concurrency optimization
 
 ## Output Requirements
 
@@ -58,8 +57,15 @@ ${1:+### Single File Optimization
 - ✅ Security first, no new risks introduced
 - ✅ Maintain backward compatibility
 - ✅ Concise and efficient code using modern syntax
-- ✅ Based on actual needs, avoid over-optimization
+- ✅ **YAGNI Principle**: Only optimize what's truly needed, avoid over-optimization
 - ✅ **Do not modify original files**: All optimized code output as new files
+
+## Optimization Constraints
+
+- ⚠️ Only fix known issues and obvious performance bottlenecks
+- ⚠️ Don't add features or abstractions that might be needed in the future
+- ⚠️ Don't rewrite working code just for "perfection"
+- ⚠️ Prioritize readability and maintainability over extreme performance
 
 ## Documentation Output
 
