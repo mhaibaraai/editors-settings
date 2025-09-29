@@ -27,6 +27,7 @@ Comprehensive analysis of code performance, quality, architecture and security i
 #### Medium Priority (Planned Action)
 
 - **Code Quality**: Eliminate duplicate code, split large functions (>30 lines), reduce cyclomatic complexity (<10)
+- **Modern Syntax**: Use ES6+ features (destructuring, arrow functions, template literals, async/await, optional chaining, etc.)
 - **Architecture Improvement**: Modular refactoring, decouple dependencies, apply design patterns
 - **Type Safety**: Improve TypeScript type definitions, strict mode checks
 
@@ -61,6 +62,10 @@ Comprehensive analysis of code performance, quality, architecture and security i
 - **Monitoring & Alerting**: Add key metrics monitoring, error tracking
 - **Logging Optimization**: Structured logging, appropriate log levels, avoid sensitive information
 - **Dependency Management**: Update dependencies, remove unused packages, security audits
+- **Modern Syntax Application**: 
+  - JavaScript/TypeScript: Use destructuring, spread operator, optional chaining, nullish coalescing
+  - Python: Use type hints, f-strings, walrus operator, dataclass
+  - Other languages: Apply corresponding modern syntax features to improve code readability and performance
 
 ## Implementation Principles
 
@@ -69,6 +74,7 @@ Comprehensive analysis of code performance, quality, architecture and security i
 - **Progressive Improvement**: Implement in phases, verify effectiveness of each step
 - **Follow Standards**: Adhere to existing code styles and architectural patterns in the project
 - **Data-Driven**: Base optimization strategies on actual performance data
+- **Clean & Efficient**: Code must be clean, efficient and use modern syntax, avoid redundant code, prioritize language modern features
 
 ## Operational Constraints
 

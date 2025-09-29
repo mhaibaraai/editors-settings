@@ -20,7 +20,8 @@
 2. **DRY (Don't Repeat Yourself)**: Avoid code duplication
 3. **KISS (Keep It Simple, Stupid)**: Keep it simple, avoid over-engineering
 4. **Defensive Programming**: Always validate inputs, handle edge cases
-5. **Copyright Respect**: Avoid copying large segments of copyright-protected code
+5. **Modern & Clean**: Code must be clean, efficient and use modern syntax, avoid redundant code, prioritize language modern features
+6. **Copyright Respect**: Avoid copying large segments of copyright-protected code
 
 ## MCP Server Integration Strategy
 
