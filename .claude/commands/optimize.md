@@ -20,16 +20,19 @@ ${1:+**Target File**: `$1`}${1:-**Entire Project**: Scan all source code files, 
 ## Analysis Focus
 
 ### 1. Critical Issues (Priority Handling)
+
 - **Security Vulnerabilities**: Input validation, permission control, dependency vulnerabilities
 - **Performance Bottlenecks**: Memory leaks, algorithm complexity, blocking operations
 - **Error Handling**: Missing try-catch, null/undefined checks
 
 ### 2. Code Quality
+
 - **Code Duplication**: Extract common logic
 - **Complex Functions**: Split functions exceeding 30 lines
 - **Cyclomatic Complexity**: Reduce to below 10
 
 ### 3. Modernization Improvements
+
 - **Modern Syntax**: ES6+, optional chaining `?.`, nullish coalescing `??`, async/await
 - **Type Safety**: TypeScript type definitions, strict mode
 - **Performance Optimization**:

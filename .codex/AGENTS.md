@@ -87,3 +87,87 @@
 - Tests follow AAA pattern: Arrange, Act, Assert
 - Keep PRs focused and easy to review
 - Prioritize simplicity over backward compatibility unless explicitly required
+
+## Custom Commands
+
+- **"Commit Changes"**: Execute `/commit` command
+- **"Optimize Code"**: Execute `/optimize` command
+
+### `/commit` Task Steps
+
+1. Run `git status` to understand the working tree state
+2. Run `git diff` to review the pending edits
+3. Group changes by logical scope and select the proper **emoji + conventional commit type** for each group:
+
+  - `✨ feat:` for new features
+  - `🐛 fix:` for bug fixes
+  - `📚 docs:` for documentation changes
+  - `💄 style:` for formatting changes
+  - `♻️ refactor:` for code refactoring
+  - `✅ test:` for test additions/changes
+  - `🔧 chore:` for maintenance tasks
+
+4. When multiple logical groups exist, iterate through them:
+
+  - Stage only the files or hunks for the current group (e.g. `git add <paths>` or `git add -p`)
+  - Create an **emoji + conventional commit message** that matches the group scope (**must use Chinese**)
+
+5. If there is only one logical group, stage everything with `git add -A` before committing
+6. Push all commits on the current branch with `git push`
+
+Remember: This project follows **emoji + Conventional Commits specification**. **All commit messages must be written in Chinese**. Do NOT add co-authors to the commit message.
+
+### `/optimize` Task Steps
+
+#### Analysis Focus
+
+1. Critical Issues (Priority Handling)
+
+- **Security Vulnerabilities**: Input validation, permission control, dependency vulnerabilities
+- **Performance Bottlenecks**: Memory leaks, algorithm complexity, blocking operations
+- **Error Handling**: Missing try-catch, null/undefined checks
+
+2. Code Quality
+
+- **Code Duplication**: Extract common logic
+- **Complex Functions**: Split functions exceeding 30 lines
+- **Cyclomatic Complexity**: Reduce to below 10
+
+3. Modernization Improvements
+
+- **Modern Syntax**: ES6+, optional chaining `?.`, nullish coalescing `??`, async/await
+- **Type Safety**: TypeScript type definitions, strict mode
+- **Performance Optimization**:
+  - Frontend: Component memoization, lazy loading, code splitting
+  - Backend: Database indexing, caching, concurrency optimization
+
+#### Output Requirements
+
+${1:+### Single File Optimization
+1. **Issue List**: List discovered issues by priority (P0/P1/P2)
+2. **Optimized Code**: Create new file with optimized code, keep original unchanged
+   - Naming convention: `$1.optimized` or create `optimized/` subdirectory
+3. **Improvement Summary**: Brief description of main improvements and expected effects
+4. **Risk Notice**: Mention compatibility impacts if any}${1:-### Project-wide Optimization
+1. **Issue List**: List discovered issues by file/module with priority labels
+2. **Optimization Plan**:
+   - P0 Critical: Files requiring immediate fixes
+   - P1 Important: Modules planned for optimization
+   - P2 Improvements: Long-term optimization directions
+3. **Priority Files**: Create optimized versions for 3-5 most critical files (new files)
+4. **Architecture Recommendations**: Overall architectural improvement directions}
+
+#### Implementation Principles
+
+- ✅ Security first, no new risks introduced
+- ✅ Maintain backward compatibility
+- ✅ Concise and efficient code using modern syntax
+- ✅ **YAGNI Principle**: Only optimize what's truly needed, avoid over-optimization
+- ✅ **Do not modify original files**: All optimized code output as new files
+
+#### Optimization Constraints
+
+- ⚠️ Only fix known issues and obvious performance bottlenecks
+- ⚠️ Don't add features or abstractions that might be needed in the future
+- ⚠️ Don't rewrite working code just for "perfection"
+- ⚠️ Prioritize readability and maintainability over extreme performance
