@@ -1,6 +1,5 @@
 ---
 description: 分析代码的性能、质量和安全问题，提供具体优化方案
-argument-hint: [file-path] (不传参数则优化整个项目)
 ---
 
 # 代码优化分析

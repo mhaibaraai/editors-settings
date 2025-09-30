@@ -32,6 +32,9 @@
 - [`.vscode/extensions.json`](./.vscode/extensions.json)
 - [`.vscode/global.code-snippets`](./.vscode/global.code-snippets)
 - [`.vscode/mcp.json`](./.vscode/mcp.json)
+- [`.vscode/prompts/global.instructions.md`](./.vscode/prompts/global.instructions.md) - 全局协作指令
+- [`.vscode/prompts/commit.instructions.md`](./.vscode/prompts/commit.instructions.md) - 约束提交流程的提示卡
+- [`.vscode/prompts/optimize.instructions.md`](./.vscode/prompts/optimize.instructions.md) - 代码优化分析任务模板
 
 ## 主题预览
 

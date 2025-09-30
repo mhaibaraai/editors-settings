@@ -1,4 +1,5 @@
 ---
+applyTo: '**'
 description: Analyze code performance, quality, and security issues with specific optimization solutions
 ---
 
