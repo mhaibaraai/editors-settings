@@ -1,6 +1,22 @@
 # 个人配置
 
-# Claude
+集中维护 Claude、Codex 与 VS Code 等开发工具的个性化设置，便于在不同设备间快速同步环境。
+
+## 快速导航
+
+- [Codex 配置](#codex)
+- [Claude 配置](#claude)
+- [VS Code 配置](#vscode)
+- [主题预览](#主题预览)
+- [推荐扩展](#推荐扩展)
+
+## Codex
+
+- [`.codex/config.toml`](./.codex/config.toml) - Codex CLI 核心配置
+- [`.codex/AGENTS.md`](./.codex/AGENTS.md) - 可用代理清单与说明
+- [`.codex/auth.json`](./.codex/auth.json) - 身份令牌与私密配置示例（注意本地安全存储）
+
+## Claude
 
 - [`.claude/CLAUDE.md`](./.claude/CLAUDE.md)
 - [`.claude/CLAUDE-zh.md`](./.claude/CLAUDE-zh.md)
@@ -9,14 +25,15 @@
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
 - [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
-# VSCode
+
+## VS Code
 
 - [`.vscode/settings.json`](./.vscode/settings.json)
 - [`.vscode/extensions.json`](./.vscode/extensions.json)
 - [`.vscode/global.code-snippets`](./.vscode/global.code-snippets)
 - [`.vscode/mcp.json`](./.vscode/mcp.json)
 
-## 预览
+## 主题预览
 
 ### 深色主题
 
@@ -33,7 +50,7 @@
 | 文件图标 | Material Icon Theme |
 | 产品图标 | Carbon |
 
-## 扩展
+## 推荐扩展
 
 ### 核心开发
 
