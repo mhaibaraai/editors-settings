@@ -21,6 +21,7 @@
 - [`.claude/CLAUDE.md`](./.claude/CLAUDE.md)
 - [`.claude/CLAUDE-zh.md`](./.claude/CLAUDE-zh.md)
 - [`.claude/.claude.json`](./.claude/.claude.json)
+- [`.claude/settings.json`](./.claude/settings.json)
 - [`.claude/commands/optimize.md`](./.claude/commands/optimize.md)
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)

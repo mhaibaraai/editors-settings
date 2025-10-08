@@ -2,8 +2,11 @@
   "env": {
     "ANTHROPIC_BASE_URL": "xxx",
     "ANTHROPIC_AUTH_TOKEN": "xxx",
-    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "permissions": {
+    "allow": [],
+    "deny": []
   },
   "includeCoAuthoredBy": false,
   "alwaysThinkingEnabled": true
