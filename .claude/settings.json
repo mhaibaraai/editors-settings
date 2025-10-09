@@ -1,13 +1,19 @@
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "xxx",
-    "ANTHROPIC_AUTH_TOKEN": "xxx",
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:3456",
+    "ANTHROPIC_AUTH_TOKEN": "openrouter_key",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
   },
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [],
-    "deny": []
+    "deny": [],
+    "defaultMode":"acceptEdits"
   },
-  "includeCoAuthoredBy": false,
-  "alwaysThinkingEnabled": true
+  "model": "openrouter,z-ai/glm-4.5-air:free",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "padding": 0
+  }
 }
