@@ -22,10 +22,16 @@
 - [`.claude/CLAUDE-zh.md`](./.claude/CLAUDE-zh.md)
 - [`.claude/.claude.json`](./.claude/.claude.json)
 - [`.claude/settings.json`](./.claude/settings.json)
+- [`.claude/config.json`](./.claude/config.json)
+- [`.claude/statusline.sh`](./.claude/statusline.sh) - Claude 状态栏脚本
 - [`.claude/commands/optimize.md`](./.claude/commands/optimize.md)
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
 - [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
+
+## Claude Code Router
+
+- [`.claude-code-router/config.json`](./.claude-code-router/config.json)
 
 ## VS Code
 
