@@ -254,19 +254,9 @@
   "github.copilot.chat.alternateGptPrompt.enabled": true,
   "github.copilot.chat.responsesApiReasoningEffort": "high",
   "chat.tools.terminal.autoApprove": {
-    // Allow the `mkdir` command, regardless of arguments
     "mkdir": true,
-    // Block the `del` command, regardless of arguments
     "del": false,
-    // Block any command containing the text "dangerous"
-    "/dangerous/": false,
-    // Unset the default `rm` rule to allow other rules to auto approve `rm`
-    // commands
-    "rm": null,
-    // Allow common git commands (status, show, add, commit, diff, push)
     "/^git (status|show|add|commit|diff|push)\\b.*$/": true,
-    // Allow zsh commands
-    "zsh": true,
   },
   "claude-code.selectedModel": "default",
   "editor.stickyTabStops": true,
