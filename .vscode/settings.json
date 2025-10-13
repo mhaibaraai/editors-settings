@@ -85,7 +85,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 2025/9/28 13:36:04",
+    "//": "Last update at 2025/10/11 20:45:24",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -193,6 +193,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "commentTranslate.source": "Copilot",
+  "commentTranslate.hover.variable": true,
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": true
   },
@@ -218,7 +219,8 @@
     "html": true,
     "powershell": true,
     "javascript": true,
-    "aspnetcorerazor": true
+    "aspnetcorerazor": true,
+    "mdc": true
   },
   "github.copilot.chat.edits.temporalContext.enabled": true,
   "github.copilot.chat.scopeSelection": true,
@@ -232,7 +234,6 @@
   "chat.checkpoints.showFileChanges": true,
   "inlineChat.enableV2": true,
   "github.copilot.chat.codesearch.enabled": true,
-  "chat.todoListTool.enabled": true,
   "chat.mcp.discovery.enabled": {
     "claude-desktop": false,
     "windsurf": false,
@@ -241,16 +242,24 @@
   },
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
-      "text": "All commit messages must be written in Chinese",
+      "text": "All commit messages must be written in Chinese, and follow emoji + Conventional Commits specification",
     },
-    {
-      "text": "Follow emoji + Conventional Commits specification"
-    }
   ],
   "github.copilot.chat.languageContext.fix.typescript.enabled": true,
   "github.copilot.chat.languageContext.inline.typescript.enabled": true,
   "github.copilot.chat.languageContext.typescript.enabled": true,
   "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:claude-sonnet-4",
+  "gitlens.ai.vscode.model": "copilot:claude-sonnet-4.5",
   "gitlens.ai.generateCommitMessage.customInstructions": "All commit messages must be written in Chinese, and follow emoji + Conventional Commits specification",
+  "github.copilot.chat.alternateGptPrompt.enabled": true,
+  "github.copilot.chat.responsesApiReasoningEffort": "high",
+  "chat.tools.terminal.autoApprove": {
+    "git add": true,
+    "git commit": true,
+    "git push": true,
+  },
+  "claude-code.selectedModel": "default",
+  "editor.stickyTabStops": true,
+  "github.copilot.chat.notebook.followCellExecution.enabled": true,
+  "chat.mcp.gallery.enabled": true,
 }

@@ -1,21 +1,28 @@
 {
   "mcpServers": {
-    "context7": {
+    "upstash/context7": {
       "type": "http",
-      "url": "https://mcp.context7.com/mcp"
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "{{CONTEXT7_API_KEY}}"
+      }
     },
-    "deepwiki": {
+    "cognitionai/deepwiki": {
       "type": "http",
       "url": "https://mcp.deepwiki.com/mcp"
     },
-    "thinking": {
+    "microsoft/playwright-mcp": {
+      "type": "stdio",
       "command": "npx",
       "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
+        "@playwright/mcp@latest"
       ]
     },
-    "nuxt-ui": {
+    "antfu/nuxt-mcp": {
+      "type": "http",
+      "url": "https://mcp.nuxt.com/mcp"
+    },
+    "nuxt/nuxt-ui": {
       "type": "http",
       "url": "https://ui.nuxt.com/mcp"
     }
