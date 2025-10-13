@@ -1,6 +1,6 @@
 # CLAUDE.md - 全局配置
 
-> 适用于所有仓库的全局 CLAUDE.md 配置，整合 Context7、DeepWiki 和 Thinking MCP 服务器
+> 适用于所有仓库的全局 CLAUDE.md 配置，整合 Context7、DeepWiki、Playwright、Nuxt 和 Nuxt UI MCP 服务器
 
 ## 核心原则
 
@@ -25,9 +25,32 @@
 
 ## MCP 服务器集成策略
 
-- **使用 Context7** 获取外部技术、框架和 API 的最新文档
-- **使用 DeepWiki** 获取 GitHub 仓库的深度技术分析
-- **使用 Thinking** 进行复杂问题分析、技术方案设计、多步骤任务规划
+### Context7
+
+- **用途**: 获取外部技术、框架和 API 的最新文档
+- **使用场景**: 查询第三方库文档、API 参考、技术规范
+- **注意**: 需要配置 `CONTEXT7_API_KEY` 环境变量
+
+### DeepWiki
+
+- **用途**: 获取 GitHub 仓库的深度技术分析
+- **使用场景**: 分析开源项目架构、理解代码库结构、学习最佳实践
+
+### Playwright MCP
+
+- **用途**: 浏览器自动化和端到端测试
+- **使用场景**: 编写 E2E 测试、网页抓取、UI 自动化测试
+- **类型**: stdio（需要 Node.js 环境）
+
+### Nuxt MCP
+
+- **用途**: Nuxt 框架文档和最佳实践
+- **使用场景**: Nuxt 项目开发、框架特性查询、配置指导
+
+### Nuxt UI
+
+- **用途**: Nuxt UI 组件库文档
+- **使用场景**: 查询 UI 组件用法、样式定制、组件 API
 
 ### 文档完整
 
@@ -77,9 +100,9 @@
 ### Markdown 规范
 
 - **代码围栏**：始终为代码块标注语言标识符以避免语法检查错误
-  - 使用 ` ```bash ` 而不是 ` ``` ` 来标记 shell 命令
-  - 使用 ` ```yaml `、` ```json `、` ```javascript ` 等标记相应语言
-  - 使用 ` ```text ` 或 ` ```plaintext ` 标记不需要语法高亮的通用内容
+  - 使用 ````bash` 而不是 ```` 来标记 shell 命令
+  - 使用 ````yaml`、````json`、````javascript` 等标记相应语言
+  - 使用 ````text` 或 ````plaintext` 标记不需要语法高亮的通用内容
 
 ## 默认行为
 
