@@ -41,11 +41,12 @@
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.stickyScroll.enabled": true,
   "editor.hover.sticky": true,
+  "eslint.useFlatConfig": true,
+  "editor.formatOnSave": false,
+  // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never",
-    "source.fixAll.markdownlint": "always"
+    "source.organizeImports": "never"
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -85,7 +86,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 2025/10/11 20:45:24",
+    "//": "Last update at 2025/10/27 20:38:24",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
@@ -255,11 +256,15 @@
   "github.copilot.chat.responsesApiReasoningEffort": "high",
   "chat.tools.terminal.autoApprove": {
     "mkdir": true,
-    "del": false,
-    "/^git (status|show|add|commit|diff|push)\\b.*$/": true,
+    "/^git (status|show|add|commit|diff|push|checkout|log|remote)\\b/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "pnpm": true
   },
-  "claude-code.selectedModel": "default",
   "editor.stickyTabStops": true,
   "github.copilot.chat.notebook.followCellExecution.enabled": true,
   "chat.mcp.gallery.enabled": true,
+  "github.copilot.chat.languageContext.typescript.includeDocumentation": true,
+  "claudeCode.selectedModel": "claude-sonnet-4-5-20250929"
 }
