@@ -27,6 +27,8 @@
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
 - [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
+- [`.claude/commands/commit-pr.md`](./.claude/commands/commit-pr.md)
+- [`.claude/commands/commit-pr-zh.md`](./.claude/commands/commit-pr-zh.md)
 
 ## Claude Code Router
 
