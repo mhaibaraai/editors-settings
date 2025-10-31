@@ -16,14 +16,14 @@ description: Create conventional commits with emojis, split changes into multipl
   - `♻️ refactor:` code refactoring
   - `✅ test:` test additions/changes
   - `🔧 chore:` maintenance tasks
-
-4. When multiple logical groups exist, process them one by one:
+4. **Breaking Changes**: Add `!` after type (e.g., `💥 feat!:`) or add `BREAKING CHANGE:` footer
+5. When multiple logical groups exist, process them one by one:
 
   - Stage only files or chunks for the current group (e.g., `git add <paths>` or `git add -p`)
   - Create an **emoji + conventional commit message** that matches the group's scope (**must be in Chinese**)
 
-5. If only one logical group exists, use `git add -A` to stage everything before committing
-6. Use `git push` to push all commits on the current branch
+6. If only one logical group exists, use `git add -A` to stage everything before committing
+7. Use `git push` to push all commits on the current branch
 
 ## Guidelines for Splitting Commits
 
@@ -40,5 +40,18 @@ description: Create conventional commits with emojis, split changes into multipl
   - If there are more than 5 logical groups, merge similar or related changes
   - Prioritize the most important and independent logical groups
   - When necessary, combine minor changes into a single `chore` or `refactor` commit
+
+## Commit Message Examples
+
+```bash
+# Regular commits
+✨ feat: 添加用户头像上传功能
+🐛 fix: 修复登录页面在移动端的布局问题
+
+# Breaking changes
+💥 feat!: 重构配置系统使用 YAML 格式
+
+BREAKING CHANGE: 配置文件格式从 JSON 改为 YAML
+```
 
 Remember: This project follows the **emoji + conventional commit specification**. **All commit messages must be written in Chinese**. Do not add co-authors in commit messages.
