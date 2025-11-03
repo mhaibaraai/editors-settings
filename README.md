@@ -24,11 +24,13 @@
 - [`.claude/config.json`](./.claude/config.json)
 - [`.claude/statusline.sh`](./.claude/statusline.sh) - Claude 状态栏脚本
 - [`.claude/commands/optimize.md`](./.claude/commands/optimize.md)
+- [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
-- [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
 - [`.claude/commands/commit-pr.md`](./.claude/commands/commit-pr.md)
 - [`.claude/commands/commit-pr-zh.md`](./.claude/commands/commit-pr-zh.md)
+- [`.claude/commands/refactor.md`](./.claude/commands/refactor.md)
+- [`.claude/commands/refactor-zh.md`](./.claude/commands/refactor-zh.md)
 
 ## Claude Code Router
 

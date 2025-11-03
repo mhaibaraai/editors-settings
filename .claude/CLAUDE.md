@@ -103,3 +103,4 @@
 - **"Commit changes"**: Execute `/commit` command
 - **"Commit with branch and PR"**: Execute `/commit-pr` command (create branch after commit, optionally create PR)
 - **"Optimize code"**: Execute `/optimize` command
+- **"Refactor method/function"**: Execute `/refactor` command
