@@ -16,7 +16,7 @@ description: Create conventional commits with emojis, split changes into multipl
   - `♻️ refactor:` code refactoring
   - `✅ test:` test additions/changes
   - `🔧 chore:` maintenance tasks
-4. **Breaking Changes**: Add `!` after type (e.g., `💥 feat!:`) or add `BREAKING CHANGE:` footer
+4. **Breaking Changes**: Add exclamation mark after type (e.g., 💥 feat!:) or add `BREAKING CHANGE:` footer
 5. When multiple logical groups exist, process them one by one:
 
   - Stage only files or chunks for the current group (e.g., `git add <paths>` or `git add -p`)
@@ -43,7 +43,7 @@ description: Create conventional commits with emojis, split changes into multipl
 
 ## Commit Message Examples
 
-```bash
+```md
 # Regular commits
 ✨ feat: 添加用户头像上传功能
 🐛 fix: 修复登录页面在移动端的布局问题
