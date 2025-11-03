@@ -27,8 +27,6 @@
 - [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
 - [`.claude/commands/commit.md`](./.claude/commands/commit.md)
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
-- [`.claude/commands/commit-pr.md`](./.claude/commands/commit-pr.md)
-- [`.claude/commands/commit-pr-zh.md`](./.claude/commands/commit-pr-zh.md)
 - [`.claude/commands/refactor.md`](./.claude/commands/refactor.md)
 - [`.claude/commands/refactor-zh.md`](./.claude/commands/refactor-zh.md)
 
