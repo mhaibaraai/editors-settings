@@ -47,8 +47,10 @@
   - Hook/Composable: `camelCase`, starting with `use` (`useUser`)
   - CSS class names: `kebab-case` or BEM convention
 - **Comment Conventions**:
-  - Use JSDoc-style comments for functions and classes
-  - Complex logic must include explanatory comments
+  - Only comment when necessary: non-obvious business logic, complex algorithms, performance optimization rationale, temporary workarounds
+  - Prefer clear naming and code structure over comments
+  - Avoid repeating what the code already expresses
+  - Public APIs require JSDoc comments, internal functions as needed
   - TODO format: `// TODO: [task description] - [owner] - [date]`
 
 ### Git Workflow
