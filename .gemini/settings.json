@@ -12,10 +12,7 @@
     "showModelInfoInChat": true,
     "hideBanner": true,
     "hideTips": false,
-    "customWittyPhrases": [
-      "You forget a thousand things every day. Make sure this is one of ’em",
-      "Connecting to AGI"
-    ]
+    "theme": "Atom One"
   },
   "context": {
     "fileName": [
@@ -26,5 +23,32 @@
   "general": {
     "previewFeatures": false,
     "preferredEditor": "code"
+  },
+  "tools": {
+    "shell": {
+      "showColor": true
+    },
+    "allowed": [
+      "run_shell_command(git)",
+      "run_shell_command(npm)",
+      "run_shell_command(pnpm)"
+    ]
+  },
+  "mcpServers": {
+    "upstash/context7": {
+      "httpUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Authorization": "your-upstash-api-key"
+      }
+    },
+    "cognitionai/deepwiki": {
+      "httpUrl": "https://mcp.deepwiki.com/mcp"
+    },
+    "antfu/nuxt-mcp": {
+      "httpUrl": "https://mcp.nuxt.com/mcp"
+    },
+    "nuxt/nuxt-ui": {
+      "httpUrl": "https://ui.nuxt.com/mcp"
+    }
   }
 }
