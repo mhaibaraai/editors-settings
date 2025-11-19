@@ -1,0 +1,30 @@
+{
+  "ide": {
+    "enabled": true,
+    "hasSeenNudge": true
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "showModelInfoInChat": true,
+    "hideBanner": true,
+    "hideTips": false,
+    "customWittyPhrases": [
+      "You forget a thousand things every day. Make sure this is one of ’em",
+      "Connecting to AGI"
+    ]
+  },
+  "context": {
+    "fileName": [
+      "AGENTS.md",
+      "GEMINI.md"
+    ]
+  },
+  "general": {
+    "previewFeatures": false,
+    "preferredEditor": "code"
+  }
+}

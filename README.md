@@ -4,16 +4,12 @@
 
 ## 快速导航
 
-- [Codex 配置](#codex)
 - [Claude 配置](#claude)
+- [Gemini 配置](#gemini)
+- [Claude Code Router 配置](#claude-code-router)
 - [VS Code 配置](#vscode)
 - [主题预览](#主题预览)
 - [推荐扩展](#推荐扩展)
-
-## Codex
-
-- [`.codex/config.toml`](./.codex/config.toml) - Codex CLI 核心配置
-- [`.codex/auth.json`](./.codex/auth.json) - 身份令牌与私密配置示例（注意本地安全存储）
 
 ## Claude
 
@@ -29,6 +25,11 @@
 - [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
 - [`.claude/commands/refactor.md`](./.claude/commands/refactor.md)
 - [`.claude/commands/refactor-zh.md`](./.claude/commands/refactor-zh.md)
+
+## Gemini
+
+- [`.gemini/AGENTS.md`](./.gemini/AGENTS.md)
+- [`.gemini/settings.json`](./.gemini/settings.json)
 
 ## Claude Code Router
 
