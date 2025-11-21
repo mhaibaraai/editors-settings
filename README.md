@@ -28,7 +28,6 @@
 
 ## Gemini
 
-- [`.gemini/AGENTS.md`](./.gemini/AGENTS.md)
 - [`.gemini/settings.json`](./.gemini/settings.json)
 
 ## Claude Code Router
