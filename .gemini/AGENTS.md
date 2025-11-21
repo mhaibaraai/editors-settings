@@ -52,7 +52,7 @@
   - Public APIs require JSDoc comments, internal functions as needed
   - TODO format: `// TODO: [task description] - [owner] - [date]`
 
-### Git Workflow
+### Git Workflow (Execute ONLY when requested)
 
 - **Commits**: Follow **Standard Conventional Commits** specification (No Emojis), use Chinese
 - **Branches**: Use descriptive names (`feat/`, `fix/`, `docs/`, `chore/`)
@@ -100,6 +100,10 @@
 - Update documentation when functionality changes
 
 ## Commit Message Guidelines
+
+**Trigger**: Only proceed with the following steps when the user explicitly asks to "commit changes" or "submit code".
+
+### Task Steps
 
 Create standard conventional commits, split changes into multiple commits when it improves clarity, and push to remote repository.
 
