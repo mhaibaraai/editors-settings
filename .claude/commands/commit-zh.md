@@ -3,7 +3,7 @@ allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git
 description: 创建标准的约定式提交（Conventional Commits），当有助于提高清晰度时将更改拆分为多个提交，并推送到远程仓库。
 ---
 
-## 任务步骤
+## 提交消息任务步骤
 
 1. 运行 `git status` 了解工作树状态
 2. 运行 `git diff` 查看待处理的编辑
@@ -49,7 +49,7 @@ description: 创建标准的约定式提交（Conventional Commits），当有�
 
 ## 提交消息示例
 
-```text
+```md
 # 常规提交
 feat: 添加用户头像上传功能
 fix: 修复登录页面在移动端的布局问题
@@ -63,6 +63,6 @@ refactor(utils): 优化日期处理函数逻辑
 feat!: 重构配置系统使用 YAML 格式
 
 BREAKING CHANGE: 配置文件格式从 JSON 改为 YAML，旧的 config.json 将不再被读取。
-````
+```
 
 记住：此项目严格遵循 **Conventional Commits 规范**。**所有提交信息必须使用中文编写**。不要在提交消息中添加共同作者。

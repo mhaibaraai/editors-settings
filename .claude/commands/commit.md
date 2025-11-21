@@ -3,7 +3,7 @@ allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git
 description: Create standard conventional commits, split changes into multiple commits when it improves clarity, and push to remote repository.
 ---
 
-## Task Steps
+## Commit Message Task Steps
 
 1. Run `git status` to understand the working tree state
 2. Run `git diff` to review pending edits
@@ -21,7 +21,7 @@ description: Create standard conventional commits, split changes into multiple c
 
 4. **Breaking Changes**:
    - **MUST** include a `BREAKING CHANGE:` footer with a description of the change.
-   - Optionally, append a `!` after the type/scope (e.g., `feat!:`) to visually signal the breaking change in the header.
+   - Optionally, append a exclamation mark after the type/scope (e.g., `feat!:`) to visually signal the breaking change in the header.
 
 5. When multiple logical groups exist, process them one by one:
 
@@ -49,7 +49,7 @@ description: Create standard conventional commits, split changes into multiple c
 
 ## Commit Message Examples
 
-```text
+```md
 # Regular commits
 feat: 添加用户头像上传功能
 fix: 修复登录页面在移动端的布局问题
@@ -63,5 +63,6 @@ refactor(utils): 优化日期处理函数逻辑
 feat!: 重构配置系统使用 YAML 格式
 
 BREAKING CHANGE: 配置文件格式从 JSON 改为 YAML，旧的 config.json 将不再被读取。
+```
 
 Remember: This project follows the **Standard Conventional Commits specification**. **All commit messages must be written in Chinese**. Do not add co-authors in commit messages.

@@ -53,14 +53,6 @@
   - Public APIs require JSDoc comments, internal functions as needed
   - TODO format: `// TODO: [task description] - [owner] - [date]`
 
-### Git Workflow
-
-- **Commits**: Follow **Emoji + Conventional Commits** specification, use Chinese
-- **Branches**: Use descriptive names (`feat/`, `fix/`, `docs/`, `chore/`)
-- **Pull Requests**: Clear titles, reference issues in PR description, atomic changes
-- **Issue References**: Only use "Closes #123" in PR descriptions, not in individual commits
-- Never commit drafts to Git
-
 ### Code Quality
 
 - Prioritize code readability and maintainability
