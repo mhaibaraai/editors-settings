@@ -103,8 +103,6 @@
 
 Create standard conventional commits, split changes into multiple commits when it improves clarity, and push to remote repository.
 
-## Task Steps
-
 1. Run `git status` to understand the working tree state
 2. Run `git diff` to review pending edits
 3. Group changes by logical scope and select appropriate **conventional commit type** for each group:
@@ -131,7 +129,7 @@ Create standard conventional commits, split changes into multiple commits when i
 6. If only one logical group exists, use `git add -A` to stage everything before committing
 7. Use `git push` to push all commits on the current branch
 
-## Guidelines for Splitting Commits
+### Guidelines for Splitting Commits
 
 - **Priority Principle**: Each commit should be an independent, meaningful logical unit
 - **When to Split**:
@@ -147,7 +145,7 @@ Create standard conventional commits, split changes into multiple commits when i
   - Prioritize the most important and independent logical groups
   - When necessary, combine minor changes into a single `chore` or `refactor` commit
 
-## Commit Message Examples
+### Commit Message Examples
 
 ```text
 # Regular commits
