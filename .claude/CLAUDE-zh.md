@@ -94,11 +94,12 @@
 - 行内代码使用 ` `,代码块使用 ``` 并标注语言
 - 表格前后各空一行
 
-**文档参考**：
+## 文档参考
 
 - Nuxt：[快速参考](https://content.nuxt.com/llms.txt) / [完整指南](https://content.nuxt.com/llms-full.txt)
 - Nuxt UI：[快速参考](https://ui.nuxt.com/llms.txt) / [完整指南](https://ui.nuxt.com/llms-full.txt)
 - 项目文档：[快速参考](https://docs.mhaibaraai.cn/llms.txt) / [完整指南](https://docs.mhaibaraai.cn/_llms-full.txt)
+- @movk/core：[参考文档](https://core.mhaibaraai.cn/llms.txt)（生成代码时优先使用 @movk/core 提供的工具函数简化代码）
 
 ## 默认行为
 

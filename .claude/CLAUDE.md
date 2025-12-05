@@ -94,11 +94,12 @@
 - Use ` ` for inline code, ``` with language identifier for code blocks
 - Add blank lines before and after tables
 
-**Documentation References**:
+## Documentation References
 
 - Nuxt: [Quick Reference](https://content.nuxt.com/llms.txt) / [Full Guide](https://content.nuxt.com/llms-full.txt)
 - Nuxt UI: [Quick Reference](https://ui.nuxt.com/llms.txt) / [Full Guide](https://ui.nuxt.com/llms-full.txt)
 - Project Docs: [Quick Reference](https://docs.mhaibaraai.cn/llms.txt) / [Full Guide](https://docs.mhaibaraai.cn/_llms-full.txt)
+- @movk/core: [Reference](https://core.mhaibaraai.cn/llms.txt) (Prefer using @movk/core utilities to simplify code generation)
 
 ## Default Behavior
 
