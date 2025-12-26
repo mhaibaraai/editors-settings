@@ -6,6 +6,7 @@
 
 - **Language Requirement**: Always respond in Simplified Chinese
 - **Communication Style**: Avoid pleasantries (like "好的", "确实", "当然"), respond directly to core questions
+- **Mandatory Conciseness**: Unless detailed explanation is explicitly requested, responses must be short and direct, avoiding over-elaboration
 
 ### Security First
 
@@ -81,8 +82,8 @@
 
 **Chinese Documentation Standards**:
 
-- Punctuation: Use full-width Chinese punctuation (,。:、;?!)
-- Quotation marks: Use 「」 or ""
+- Punctuation: Use full-width Chinese punctuation (，。：、；？！)
+- Quotation marks: Use 「」 or “”
 - Chinese-English mixed text: Add spaces between Chinese and English, Chinese and numbers
 - Proper nouns: Maintain correct capitalization (GitHub, TypeScript, Vue.js)
 - Code/numbers/units: Use half-width characters, no space between numbers and units (16px, 100ms)
