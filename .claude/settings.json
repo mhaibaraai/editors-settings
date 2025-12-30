@@ -7,7 +7,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "~/.claude/statusline.sh",
+    "command": "bun x ccusage statusline --cost-source cc --no-offline",
     "padding": 0
   }
 }
