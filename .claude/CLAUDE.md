@@ -1,7 +1,3 @@
-# CLAUDE.md - Global Configuration
-
-> Global CLAUDE.md configuration for all repositories
-
 ## Core Principles
 
 - **Language Requirement**: Always respond in Simplified Chinese
@@ -47,12 +43,10 @@
   - Component files: `PascalCase` (`ComponentName.vue`)
   - Hook/Composable: `camelCase`, starting with `use` (`useUser`)
   - CSS class names: `kebab-case` or BEM convention
-- **Comment Conventions**:
-  - Only comment when necessary: non-obvious business logic, complex algorithms, performance optimization rationale, temporary workarounds
-  - Prefer clear naming and code structure over comments
-  - Avoid repeating what the code already expresses
-  - Public APIs require JSDoc comments, internal functions as needed
-  - TODO format: `// TODO: [task description] - [owner] - [date]`
+- **Comments**: Minimal
+  - ❌ NO: obvious code, type info already in signature, section dividers
+  - ✅ YES: complex algorithms, non-obvious business logic, public API JSDoc
+  - TODO: `// TODO: description - owner`
 
 ### Code Quality
 
@@ -112,5 +106,3 @@
 ## Custom Commands
 
 - **"Commit changes"**: Execute `/commit` command
-- **"Optimize code"**: Execute `/optimize` command
-- **"Refactor method/function"**: Execute `/refactor` command

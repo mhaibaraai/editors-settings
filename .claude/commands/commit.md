@@ -1,13 +1,19 @@
 ---
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git diff:*), Bash(git push:*)
+allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git diff:*), Bash(git push:*), Bash(git branch:*), Bash(git checkout:*)
 description: Create standard conventional commits, split changes into multiple commits when it improves clarity, and push to remote repository.
 ---
 
 ## Commit Message Task Steps
 
 1. Run `git status` to understand the working tree state
-2. Run `git diff` to review pending edits
-3. Group changes by logical scope and select appropriate **conventional commit type** for each group:
+2. **Branch Protection Check**:
+   - Run `git branch --show-current` to check current branch
+   - If on `main`, `dev` or `master` branch:
+     - Create a new feature branch with descriptive name (e.g., `git checkout -b feat/description` or `git checkout -b fix/description`)
+     - The branch name should reflect the main change being committed
+   - If already on a feature branch, proceed to next step
+3. Run `git diff` to review pending edits
+4. Group changes by logical scope and select appropriate **conventional commit type** for each group:
 
   - `feat:` new features
   - `fix:` bug fixes
@@ -19,17 +25,17 @@ description: Create standard conventional commits, split changes into multiple c
   - `perf:` performance improvements
   - `ci:` CI/CD configuration changes
 
-4. **Breaking Changes**:
+5. **Breaking Changes**:
    - **MUST** include a `BREAKING CHANGE:` footer with a description of the change.
    - Optionally, append a exclamation mark after the type/scope (e.g., `feat!:`) to visually signal the breaking change in the header.
 
-5. When multiple logical groups exist, process them one by one:
+6. When multiple logical groups exist, process them one by one:
 
   - Stage only files or chunks for the current group (e.g., `git add <paths>` or `git add -p`)
   - Create a **conventional commit message** that matches the group's scope (**must be in Chinese**)
 
-6. If only one logical group exists, use `git add -A` to stage everything before committing
-7. Use `git push` to push all commits on the current branch
+7. If only one logical group exists, use `git add -A` to stage everything before committing
+8. Use `git push` to push all commits on the current branch
 
 ## Guidelines for Splitting Commits
 
