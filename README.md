@@ -1,45 +1,15 @@
 # 个人配置
 
-集中维护 Claude、Codex 与 VS Code 等开发工具的个性化设置，便于在不同设备间快速同步环境。
+集中维护 Claude 与 VS Code 等开发工具的个性化设置，便于在不同设备间快速同步环境。
+
+[everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 
 ## 快速导航
 
-- [Claude 配置](#claude)
-- [Gemini 配置](#gemini)
-- [Claude Code Router 配置](#claude-code-router)
-- [VS Code 配置](#vscode)
-- [主题预览](#主题预览)
-- [推荐扩展](#推荐扩展)
-
-## Claude
-
-- [`.claude/CLAUDE.md`](./.claude/CLAUDE.md)
-- [`.claude/CLAUDE-zh.md`](./.claude/CLAUDE-zh.md)
-- [`.claude/.claude.json`](./.claude/.claude.json)
-- [`.claude/settings.json`](./.claude/settings.json)
-- [`.claude/config.json`](./.claude/config.json)
-- [`.claude/statusline.sh`](./.claude/statusline.sh) - Claude 状态栏脚本
-- [`.claude/commands/optimize.md`](./.claude/commands/optimize.md)
-- [`.claude/commands/optimize-zh.md`](./.claude/commands/optimize-zh.md)
-- [`.claude/commands/commit.md`](./.claude/commands/commit.md)
-- [`.claude/commands/commit-zh.md`](./.claude/commands/commit-zh.md)
-- [`.claude/commands/refactor.md`](./.claude/commands/refactor.md)
-- [`.claude/commands/refactor-zh.md`](./.claude/commands/refactor-zh.md)
-
-## Gemini
-
-- [`.gemini/settings.json`](./.gemini/settings.json)
-
-## Claude Code Router
-
-- [`.claude-code-router/config.json`](./.claude-code-router/config.json)
-
-## VS Code
-
-- [`.vscode/settings.json`](./.vscode/settings.json)
-- [`.vscode/extensions.json`](./.vscode/extensions.json)
-- [`.vscode/global.code-snippets`](./.vscode/global.code-snippets)
-- [`.vscode/mcp.json`](./.vscode/mcp.json)
+- Claude 配置
+- VS Code 配置
+- 主题预览
+- 推荐扩展
 
 ## 主题预览
 
